@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import InputField from './components/inputField';
+import TodoList from './components/TodoList';
 import {Todo} from './modal'
 
 
@@ -25,7 +26,7 @@ const App:React.FC = ()=> {
      todo={todo}
      setTodo = {setTodo}
      handleAdd ={handleAdd}/>
-    
+    <TodoList todolist={todolist} setTodoList={setTodoList}/>
     </div>
   );
 }
